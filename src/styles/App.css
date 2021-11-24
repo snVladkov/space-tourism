@@ -1,0 +1,1085 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, button, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.header .header__rule {
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1000;
+}
+.header .header__navigation {
+  background-color: rgba(165, 165, 165, 0.05);
+  backdrop-filter: blur(20px);
+}
+.header .header__navigation .header__link {
+  border-bottom: solid 3px rgba(165, 165, 165, 0.04);
+}
+.header .header__navigation .header__link:hover {
+  border-bottom: solid 3px rgba(255, 255, 255, 0.3);
+  transition: border-bottom 200ms;
+}
+.header .header__navigation .header__link .header__link-number {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+.header .header__navigation .header__link .header__link-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  color: white;
+}
+.header .header__navigation .header__link_active {
+  border-bottom: solid 3px white;
+}
+.header .header__navigation .header__link_active .header__link-number {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+.header .header__navigation .header__link_active .header__link-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  color: white;
+}
+
+.home {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-size: cover;
+}
+.home .home__subheading {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.22rem;
+  color: #d0d6f9;
+}
+.home .home__heading {
+  font-family: "Bellefair", serif;
+  font-size: 160px;
+  text-transform: uppercase;
+  color: white;
+}
+.home .home__paragraph {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+  color: #d0d6f9;
+}
+@media screen and (max-width: 991px) {
+  .home .home__paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .home .home__paragraph {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}
+.home .home__button {
+  text-decoration: none;
+  background-color: white;
+  font-family: "Bellefair", serif;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 132px;
+  color: #0b0d17;
+  border-radius: 100%;
+}
+.home .home__button:hover {
+  box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.3);
+  transition: box-shadow 300ms;
+}
+
+.destination {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-size: cover;
+}
+.destination .destination__subheading .destination__subheading-number {
+  margin-right: 5%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 991px) {
+  .destination .destination__subheading .destination__subheading-number {
+    font-size: 24px;
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .destination .destination__subheading .destination__subheading-number {
+    font-size: 16px;
+    margin-right: 5%;
+  }
+}
+.destination .destination__subheading .destination__subheading-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  .destination .destination__subheading .destination__subheading-text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .destination .destination__subheading .destination__subheading-text {
+    font-size: 16px;
+  }
+}
+.destination .destination__buttons .destination__button {
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: solid 2px rgba(255, 255, 255, 0);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #d0d6f9;
+}
+.destination .destination__buttons .destination__button:hover {
+  border-bottom: solid 2px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: border-bottom 200ms;
+}
+.destination .destination__buttons .destination__button_active {
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: solid 2px white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: white;
+  cursor: pointer;
+}
+.destination .destination__heading {
+  font-family: "Bellefair", serif;
+  font-size: 120px;
+  text-transform: uppercase;
+  color: white;
+}
+.destination .destination__paragraph {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+  color: #d0d6f9;
+}
+@media screen and (max-width: 991px) {
+  .destination .destination__paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .destination .destination__paragraph {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}
+.destination .destination__rule {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.destination .destination__distance-label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: #d0d6f9;
+}
+@media screen and (max-width: 991px) {
+  .destination .destination__distance-label {
+    margin-bottom: 4%;
+  }
+}
+.destination .destination__distance-value {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: white;
+}
+.destination .destination__time-label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: #d0d6f9;
+}
+@media screen and (max-width: 991px) {
+  .destination .destination__time-label {
+    margin-bottom: 4%;
+  }
+}
+.destination .destination__time-value {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.crew {
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+}
+.crew .crew__subheading .crew__subheading-number {
+  margin-right: 5%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 991px) {
+  .crew .crew__subheading .crew__subheading-number {
+    font-size: 24px;
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .crew .crew__subheading .crew__subheading-number {
+    font-size: 16px;
+    margin-right: 5%;
+  }
+}
+.crew .crew__subheading .crew__subheading-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  .crew .crew__subheading .crew__subheading-text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .crew .crew__subheading .crew__subheading-text {
+    font-size: 16px;
+  }
+}
+.crew .crew__role {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+.crew .crew__heading {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: white;
+}
+.crew .crew__paragraph {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+  color: #d0d6f9;
+}
+@media screen and (max-width: 991px) {
+  .crew .crew__paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .crew .crew__paragraph {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}
+.crew .crew__buttons .crew__button {
+  border-radius: 100%;
+  background-color: rgba(165, 165, 165, 0.2);
+}
+.crew .crew__buttons .crew__button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.crew .crew__buttons .crew__button_active {
+  border-radius: 100%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.technology {
+  background-image: url(../assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+}
+.technology .technology__subheading .technology__subheading-number {
+  margin-right: 5%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 991px) {
+  .technology .technology__subheading .technology__subheading-number {
+    font-size: 24px;
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .technology .technology__subheading .technology__subheading-number {
+    font-size: 16px;
+    margin-right: 5%;
+  }
+}
+.technology .technology__subheading .technology__subheading-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  .technology .technology__subheading .technology__subheading-text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .technology .technology__subheading .technology__subheading-text {
+    font-size: 16px;
+  }
+}
+.technology .technology__buttons .technology__button {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  color: white;
+  background-color: #0b0d17;
+  border: solid 1px white;
+  border-radius: 100%;
+}
+.technology .technology__buttons .technology__button:hover {
+  color: #0b0d17;
+  background-color: white;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.technology .technology__buttons .technology__button_active {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  color: #0b0d17;
+  background-color: white;
+  border: solid 1px white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.technology .technology__label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+}
+.technology .technology__heading {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: white;
+}
+.technology .technology__paragraph {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+  color: #d0d6f9;
+}
+@media screen and (max-width: 991px) {
+  .technology .technology__paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .technology .technology__paragraph {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 10%;
+  margin-top: 2.5%;
+  margin-left: 3%;
+}
+.header .header__logo {
+  width: 3%;
+}
+.header .header__rule {
+  width: 30%;
+  height: 1px;
+  margin-left: 3%;
+  position: relative;
+  left: 2%;
+}
+.header .header__navigation {
+  width: 64%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header .header__navigation .header__link {
+  height: 60%;
+  text-decoration: none;
+  margin-right: 6%;
+}
+.header .header__navigation .header__link .header__link-number {
+  margin-right: 8%;
+}
+.header .header__navigation .header__link_active {
+  height: 60%;
+  text-decoration: none;
+  margin-right: 6%;
+}
+.header .header__navigation .header__link_active .header__link-number {
+  margin-right: 8%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
+
+.home {
+  padding-top: 32vh;
+  padding-left: 4%;
+  height: 100vh;
+}
+.home .home__subheading {
+  grid-area: 1/2/span 1/span 5;
+  align-self: flex-end;
+  padding-top: 10%;
+}
+.home .home__heading {
+  grid-area: 2/2/span 1/span 4;
+  align-self: center;
+}
+.home .home__paragraph {
+  grid-area: 3/2/span 1/span 4;
+  padding-bottom: 5%;
+}
+.home .home__button {
+  grid-area: 2/9/span 2/span 3;
+  align-self: center;
+  justify-self: center;
+  height: 300px;
+  width: 300px;
+}
+
+.destination {
+  padding-top: 22vh;
+  height: 100vh;
+}
+.destination .destination__subheading {
+  grid-area: 1/2/span 1/span 4;
+  margin-bottom: 10%;
+}
+.destination .destination__image {
+  grid-area: 2/2/span 6/span 4;
+  width: 90%;
+  justify-self: right;
+  padding-top: 10%;
+}
+.destination .destination__buttons {
+  grid-area: 2/8/span 1/span 4;
+  display: flex;
+  height: 50%;
+}
+.destination .destination__buttons .destination__button,
+.destination .destination__buttons .destination__button_active {
+  margin-right: 8%;
+}
+.destination .destination__heading {
+  grid-area: 3/8/span 1/span 4;
+}
+.destination .destination__paragraph {
+  grid-area: 4/8/span 1/span 4;
+  margin-bottom: 5%;
+}
+.destination .destination__rule {
+  grid-area: 5/8/span 1/span 4;
+  width: 100%;
+  height: 1px;
+  margin-top: 3%;
+}
+.destination .destination__distance-label {
+  grid-area: 6/8/span 1/span 2;
+  align-self: center;
+}
+.destination .destination__distance-value {
+  grid-area: 7/8/span 1/span 2;
+  margin-bottom: 40%;
+}
+.destination .destination__time-label {
+  grid-area: 6/10/span 1/span 2;
+  align-self: center;
+}
+.destination .destination__time-value {
+  grid-area: 7/10/span 1/span 2;
+}
+
+.crew {
+  grid-template-rows: 20% 15% 15% 30% 20%;
+  padding-top: 22vh;
+  height: 100vh;
+}
+.crew .crew__subheading {
+  grid-area: 1/2/span 1/span 5;
+  margin-bottom: 13%;
+}
+.crew .crew__role {
+  grid-area: 2/2/span 1/span 5;
+  align-self: flex-end;
+  padding-bottom: 3%;
+}
+.crew .crew__heading {
+  grid-area: 3/2/span 1/span 6;
+}
+.crew .crew__paragraph {
+  grid-area: 4/2/span 1/span 4;
+}
+.crew .crew__buttons {
+  grid-area: 5/2/span 1/span 2;
+  display: flex;
+  margin-top: 10%;
+}
+.crew .crew__buttons .crew__button {
+  margin-right: 8%;
+  height: 18px;
+  width: 18px;
+}
+.crew .crew__buttons .crew__button_active {
+  margin-right: 8%;
+  height: 18px;
+  width: 18px;
+}
+.crew .crew__image {
+  grid-area: 1/8/span 5/span 4;
+  width: 29%;
+  position: fixed;
+  right: 10%;
+  bottom: 0;
+}
+
+.technology {
+  padding-top: 22vh;
+  height: 100vh;
+}
+.technology .technology__subheading {
+  grid-area: 1/2/span 1/span 4;
+}
+.technology .technology__buttons {
+  grid-area: 2/2/span 3/span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.technology .technology__buttons .technology__button {
+  margin-bottom: 40%;
+  width: 75px;
+  height: 75px;
+}
+.technology .technology__buttons .technology__button_active {
+  margin-bottom: 40%;
+  width: 75px;
+  height: 75px;
+}
+.technology .technology__label {
+  grid-area: 2/3/span 1/span 5;
+  align-self: flex-end;
+  margin: 8% 0 2%;
+}
+.technology .technology__heading {
+  grid-area: 3/3/span 1/span 5;
+  margin-bottom: -10%;
+}
+.technology .technology__paragraph {
+  grid-area: 4/3/span 1/span 4;
+  margin-bottom: 20%;
+}
+.technology .technology__image {
+  grid-area: 2/9/span 3/span 4;
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    margin: 0;
+  }
+  .header .header__logo {
+    width: 7%;
+    margin-left: 5%;
+  }
+  .header .header__rule {
+    visibility: hidden;
+  }
+  .header .header__navigation {
+    padding-left: 8%;
+  }
+  .header .header__navigation .header__link,
+.header .header__navigation .header__link_active {
+    margin-right: 10%;
+  }
+  .header .header__navigation .header__link .header__link-number,
+.header .header__navigation .header__link_active .header__link-number {
+    display: none;
+  }
+  .header .header__navigation .header__link .header__link-text,
+.header .header__navigation .header__link_active .header__link-text {
+    font-size: 16px;
+  }
+
+  .home {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    padding: 15% 20% 5%;
+    justify-items: center;
+  }
+  .home .home__subheading {
+    grid-area: 1/1/span 1/span 12;
+    font-size: 22px;
+  }
+  .home .home__heading {
+    grid-area: 2/1/span 1/span 12;
+    font-size: 140px;
+  }
+  .home .home__paragraph {
+    grid-area: 3/1/span 1/span 12;
+  }
+  .home .home__button {
+    grid-area: 4/1/span 1/span 12;
+    height: 250px;
+    width: 250px;
+    font-size: 32px;
+    padding-top: 109px;
+  }
+
+  .destination {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+    padding-top: 18%;
+    justify-items: center;
+  }
+  .destination .destination__subheading {
+    grid-area: 1/1/span 1/span 12;
+    width: 100%;
+    justify-self: flex-start;
+    margin-bottom: 2%;
+  }
+  .destination .destination__image {
+    grid-area: 2/1/span 1/span 12;
+    width: 37%;
+    padding-top: 2%;
+    justify-self: center;
+  }
+  .destination .destination__buttons {
+    grid-area: 3/1/span 1/span 12;
+    margin: 4% 0;
+    width: 40%;
+    justify-content: space-around;
+  }
+  .destination .destination__buttons .destination__button,
+.destination .destination__buttons .destination__button_active {
+    margin: 0;
+  }
+  .destination .destination__heading {
+    grid-area: 4/1/span 1/span 12;
+    font-size: 80px;
+    margin-top: 2%;
+  }
+  .destination .destination__paragraph {
+    grid-area: 5/1/span 1/span 12;
+    width: 80%;
+    margin: 0;
+  }
+  .destination .destination__rule {
+    grid-area: 6/1/span 1/span 12;
+    width: 80%;
+  }
+  .destination .destination__distance-label {
+    grid-area: 7/4/span 1/span 3;
+  }
+  .destination .destination__distance-value {
+    grid-area: 8/4/span 1/span 3;
+  }
+  .destination .destination__time-label {
+    grid-area: 7/7/span 1/span 3;
+  }
+  .destination .destination__time-value {
+    grid-area: 8/7/span 1/span 3;
+  }
+
+  .crew {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+    grid-template-rows: 10% 5% 10% 15% 5% 55%;
+    padding-top: 18%;
+    justify-items: center;
+  }
+  .crew .crew__subheading {
+    grid-area: 1/1/span 1/span 12;
+    width: 100%;
+    justify-self: flex-start;
+    margin-bottom: 4%;
+  }
+  .crew .crew__role {
+    grid-area: 2/1/span 1/span 12;
+    font-size: 24px;
+  }
+  .crew .crew__heading {
+    grid-area: 3/1/span 1/span 12;
+    font-size: 42px;
+  }
+  .crew .crew__paragraph {
+    grid-area: 4/1/span 1/span 12;
+    width: 75%;
+  }
+  .crew .crew__buttons {
+    grid-area: 5/1/span 1/span 12;
+    width: 16%;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .crew .crew__buttons .crew__button {
+    height: 10px;
+    width: 10px;
+  }
+  .crew .crew__buttons .crew__button_active {
+    height: 10px;
+    width: 10px;
+  }
+  .crew .crew__image {
+    grid-area: 6/1/span 1/span 12;
+    height: 100%;
+    width: auto;
+    position: static;
+  }
+
+  .technology {
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+    grid-template-rows: 10% 30% 20% 5% 10% 25%;
+    padding-top: 18%;
+    justify-items: center;
+  }
+  .technology .technology__subheading {
+    grid-area: 1/1/span 1/span 12;
+    width: 100%;
+    justify-self: flex-start;
+  }
+  .technology .technology__buttons {
+    grid-area: 3/1/span 1/span 12;
+    align-self: center;
+    width: 35%;
+    height: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .technology .technology__buttons .technology__button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  .technology .technology__buttons .technology__button_active {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  .technology .technology__label {
+    grid-area: 4/1/span 1/span 12;
+    align-self: center;
+    margin: 0 0 2%;
+    font-size: 18px;
+  }
+  .technology .technology__heading {
+    grid-area: 5/1/span 1/span 12;
+    font-size: 48px;
+  }
+  .technology .technology__paragraph {
+    grid-area: 6/1/span 1/span 12;
+    width: 70%;
+  }
+  .technology .technology__image {
+    grid-area: 2/1/span 1/span 12;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .header .header__logo {
+    width: 10%;
+    margin: 2% 0 0 5%;
+  }
+  .header .header__navigation_mobile {
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header .header__navigation_mobile .header__menu-open_mobile {
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 2%;
+  }
+  .header .header__navigation_mobile .header__menu_mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(165, 165, 165, 0.05);
+    backdrop-filter: blur(30px);
+  }
+  .header .header__navigation_mobile .header__menu_mobile .header__menu-close_mobile {
+    width: 20%;
+    align-self: flex-end;
+    margin-bottom: 20%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .header .header__navigation_mobile .header__menu_mobile .header__link_mobile {
+    text-decoration: none;
+    padding: 8%;
+  }
+  .header .header__navigation_mobile .header__menu_mobile .header__link_mobile .header__link-number {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-right: 6%;
+  }
+  .header .header__navigation_mobile .header__menu_mobile .header__link_mobile .header__link-text {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.14rem;
+    color: white;
+  }
+
+  .home {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    padding: 20% 8% 10%;
+  }
+  .home .home__subheading {
+    font-size: 16px;
+    margin-bottom: 7%;
+  }
+  .home .home__heading {
+    font-size: 80px;
+    margin-bottom: 6%;
+  }
+  .home .home__button {
+    height: 150px;
+    width: 150px;
+    font-size: 22px;
+    padding-top: 63px;
+  }
+
+  .destination {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-size: 100% 100%;
+    grid-template-rows: 10% 30% 17% 10% 28% 6% 5% 10% 5% 10%;
+    padding: 20% 8% 0;
+  }
+  .destination .destination__subheading {
+    text-align: center;
+  }
+  .destination .destination__image {
+    width: 50%;
+  }
+  .destination .destination__buttons {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .destination .destination__buttons .destination__button,
+.destination .destination__buttons .destination__button_active {
+    font-size: 16px;
+  }
+  .destination .destination__heading {
+    font-size: 48px;
+  }
+  .destination .destination__paragraph {
+    width: 100%;
+    align-self: center;
+  }
+  .destination .destination__rule {
+    width: 100%;
+  }
+  .destination .destination__distance-label {
+    grid-area: 7/1/span 1/span 12;
+  }
+  .destination .destination__distance-value {
+    grid-area: 8/1/span 1/span 12;
+  }
+  .destination .destination__time-label {
+    grid-area: 9/1/span 1/span 12;
+  }
+  .destination .destination__time-value {
+    grid-area: 10/1/span 1/span 12;
+  }
+
+  .crew {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    grid-template-rows: 10% 35% 10% 5% 10% 25%;
+    align-items: center;
+    padding: 20% 8% 0;
+  }
+  .crew .crew__subheading {
+    text-align: center;
+    align-self: flex-start;
+  }
+  .crew .crew__role {
+    grid-area: 4/1/span 1/span 12;
+    font-size: 18px;
+    align-self: flex-start;
+  }
+  .crew .crew__heading {
+    grid-area: 5/1/span 1/span 12;
+    font-size: 26px;
+    align-self: flex-start;
+  }
+  .crew .crew__paragraph {
+    grid-area: 6/1/span 1/span 12;
+    width: 100%;
+    align-self: flex-start;
+  }
+  .crew .crew__buttons {
+    grid-area: 3/1/span 1/span 12;
+    width: 35%;
+  }
+  .crew .crew__buttons .crew__button {
+    height: 10px;
+    width: 10px;
+  }
+  .crew .crew__buttons .crew__button_active {
+    height: 10px;
+    width: 10px;
+  }
+  .crew .crew__image {
+    grid-area: 2/1/span 1/span 12;
+    height: 100%;
+  }
+
+  .technology {
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    grid-template-rows: 10% 25% 15% 5% 5% 30%;
+    align-items: center;
+    padding: 20% 0 0;
+  }
+  .technology .technology__subheading {
+    text-align: center;
+    align-self: flex-start;
+  }
+  .technology .technology__buttons {
+    width: 60%;
+  }
+  .technology .technology__buttons .technology__button {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+  .technology .technology__buttons .technology__button_active {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+  .technology .technology__label {
+    font-size: 16px;
+  }
+  .technology .technology__heading {
+    font-size: 26px;
+    margin: 0;
+  }
+  .technology .technology__paragraph {
+    width: 85%;
+    margin: 5% 0 0;
+    align-self: flex-start;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,289 @@
+@use "./base";
+
+//header
+.header {
+  .header__rule {
+    background-color: base.$color-grey;
+    z-index: 1000;
+  }
+
+  .header__navigation {
+    background-color: rgba(165, 165, 165, 0.05);
+    backdrop-filter: blur(20px);
+
+    .header__link {
+      border-bottom: solid 3px rgba(165, 165, 165, 0.04);
+
+      &:hover {
+        border-bottom: solid 3px base.$color-grey;
+        transition: border-bottom 200ms;
+      }
+
+      .header__link-number {
+        font-family: base.$font-secondary;
+        font-size: 18px;
+        font-weight: 700;
+        color: base.$color-warm;
+      }
+
+      .header__link-text {
+        font-family: base.$font-secondary;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.12rem;
+        color: base.$color-warm;
+      }
+    }
+
+    .header__link_active {
+      border-bottom: solid 3px base.$color-warm;
+     
+      .header__link-number {
+        font-family: base.$font-secondary;
+        font-size: 18px;
+        font-weight: 700;
+        color: base.$color-warm;
+      }
+
+      .header__link-text {
+        font-family: base.$font-secondary;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.12rem;
+        color: base.$color-warm;
+      }
+    }
+  }
+}
+
+//home page
+.home {
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-size: cover;
+
+  .home__subheading {
+    font-family: base.$font-secondary;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.22rem;
+    color: base.$color-cold;
+  }
+
+  .home__heading {
+    font-family: base.$font-main;
+    font-size: 160px;
+    text-transform: uppercase;
+    color: base.$color-warm;
+  }
+
+  .home__paragraph {
+    @include base.para;
+  }
+
+  .home__button {
+    text-decoration: none;
+    background-color: base.$color-warm;
+    font-family: base.$font-main;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 132px;
+    color: base.$color-dark;
+    border-radius: 100%;
+
+    &:hover {
+      box-shadow: 0 0 0 60px base.$color-grey;
+      transition: box-shadow 300ms;
+    }
+  }
+}
+
+//destination page
+.destination {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-size: cover;
+
+  .destination__subheading {
+    .destination__subheading-number {
+      @include base.subhead-num;
+    }
+
+    .destination__subheading-text {
+      @include base.subhead-text;
+    }
+  }
+
+  .destination__buttons {
+    .destination__button {
+      background-color: rgba(255, 255, 255, 0);
+      border-bottom: solid 2px rgba(255, 255, 255, 0);
+      font-family: base.$font-secondary;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: base.$color-cold;
+
+      &:hover {
+        border-bottom: solid 2px base.$color-grey;
+        cursor: pointer;
+        transition: border-bottom 200ms;
+      }
+    }
+
+    .destination__button_active {
+      background-color: rgba(255, 255, 255, 0);
+      border-bottom: solid 2px base.$color-warm;
+      font-family: base.$font-secondary;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: base.$color-warm;
+      cursor: pointer;
+    }
+  }
+
+  .destination__heading {
+    font-family: base.$font-main;
+    font-size: 120px;
+    text-transform: uppercase;
+    color: base.$color-warm;
+  }
+
+  .destination__paragraph {
+    @include base.para;
+  }
+
+  .destination__rule {
+    background-color: base.$color-grey;
+  }
+
+  .destination__distance-label {
+    @include base.label;
+  }
+
+  .destination__distance-value {
+    @include base.value;
+  }
+
+  .destination__time-label {
+    @include base.label;
+  }
+
+  .destination__time-value {
+    @include base.value;
+  }
+}
+
+//crew page
+.crew {
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+
+  .crew__subheading {
+    .crew__subheading-number {
+      @include base.subhead-num;
+    }
+
+    .crew__subheading-text {
+      @include base.subhead-text;
+    }
+  }
+
+  .crew__role {
+    font-family: base.$font-main;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: base.$color-grey;
+  }
+
+  .crew__heading {
+    font-family: base.$font-main;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: base.$color-warm;
+  }
+
+  .crew__paragraph {
+    @include base.para;
+  }
+
+  .crew__buttons {
+    .crew__button {
+      border-radius: 100%;
+      background-color: rgba(165, 165, 165, 0.2);
+
+      &:hover {
+        cursor: pointer;
+        background-color: base.$color-grey;
+      }
+    }
+
+    .crew__button_active {
+      border-radius: 100%;
+      background-color: base.$color-warm;
+      cursor: pointer;
+    }
+  }
+}
+
+//technology page
+.technology {
+  background-image: url(../assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+
+  .technology__subheading {
+    .technology__subheading-number {
+      @include base.subhead-num;
+    }
+
+    .technology__subheading-text {
+      @include base.subhead-text;
+    }
+  }
+
+  .technology__buttons {
+    .technology__button {
+      font-family: base.$font-main;
+      font-size: 28px;
+      color: base.$color-warm;
+      background-color: base.$color-dark;
+      border: solid 1px base.$color-warm;
+      border-radius: 100%;
+
+      &:hover {
+        color: base.$color-dark;
+        background-color: base.$color-warm;
+        cursor: pointer;
+        transition: all 200ms;
+      }
+    }
+
+    .technology__button_active {
+      font-family: base.$font-main;
+      font-size: 28px;
+      color: base.$color-dark;
+      background-color: base.$color-warm;
+      border: solid 1px base.$color-warm;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  }
+    .technology__label {
+      font-family: base.$font-secondary;
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: base.$color-cold;  
+    }
+
+    .technology__heading {
+      font-family: base.$font-main;
+      font-size: 56px;
+      text-transform: uppercase;
+      color: base.$color-warm;  
+    } 
+
+    .technology__paragraph {
+      @include base.para;
+    }
+}

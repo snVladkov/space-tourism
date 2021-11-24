@@ -1,0 +1,725 @@
+@use "./base";
+
+//header with navigation
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 10%;
+  margin-top: 2.5%;
+  margin-left: 3%;
+
+  .header__logo {
+    width: 3%;
+  }
+
+  .header__rule {
+    width: 30%;
+    height: 1px;
+    margin-left: 3%;
+    position: relative;
+    left: 2%;
+  }
+
+  .header__navigation {
+    width: 64%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .header__link {
+      height: 60%;
+      text-decoration: none;
+      margin-right: 6%;
+
+      .header__link-number {
+        margin-right: 8%;
+      }
+    }
+
+    .header__link_active {
+      height: 60%;
+      text-decoration: none;
+      margin-right: 6%;
+
+      .header__link-number {
+        margin-right: 8%;
+      }
+    }
+  }
+}
+
+//rules for all pages
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
+
+//home page
+.home {
+  padding-top: 32vh;
+  padding-left: 4%;
+  height: 100vh;
+
+  .home__subheading {
+    grid-area: 1 / 2 / span 1 / span 5;
+    align-self: flex-end;
+    padding-top: 10%;
+  }
+
+  .home__heading {
+    grid-area: 2 / 2 / span 1 / span 4;
+    align-self: center;
+  }
+
+  .home__paragraph {
+    grid-area: 3 / 2 / span 1 / span 4;
+    padding-bottom: 5%;
+  }
+
+  .home__button {
+    grid-area: 2 / 9 / span 2 / span 3;
+    align-self: center;
+    justify-self: center;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+//destination page
+.destination {
+  padding-top: 22vh;
+  height: 100vh;
+
+  .destination__subheading {
+    grid-area: 1 / 2 / span 1 / span 4;
+    margin-bottom: 10%;
+  }
+
+  .destination__image {
+    grid-area: 2 / 2 / span 6 / span 4;
+    width: 90%;
+    justify-self: right;
+    padding-top: 10%;
+  }
+
+  .destination__buttons {
+    grid-area: 2 / 8 / span 1 / span 4;
+    display: flex;
+    height: 50%;
+
+    .destination__button,
+    .destination__button_active {
+      margin-right: 8%;
+    }
+  }
+
+  .destination__heading {
+    grid-area: 3 / 8 / span 1 / span 4;
+  }
+
+  .destination__paragraph {
+    grid-area: 4 / 8 / span 1 / span 4;
+    margin-bottom: 5%;
+  }
+
+  .destination__rule {
+    grid-area: 5 / 8 / span 1 / span 4;
+    width: 100%;
+    height: 1px;
+    margin-top: 3%;
+  }
+
+  .destination__distance-label {
+    grid-area: 6 / 8 / span 1 / span 2;
+    align-self: center;
+  }
+
+  .destination__distance-value {
+    grid-area: 7 / 8 / span 1 / span 2;
+    margin-bottom: 40%;
+  }
+
+  .destination__time-label {
+    grid-area: 6 / 10 / span 1 / span 2;
+    align-self: center;
+  }
+
+  .destination__time-value {
+    grid-area: 7 / 10 / span 1 / span 2;
+  }
+}
+
+//crew page
+.crew {
+  grid-template-rows: 20% 15% 15% 30% 20%;
+  padding-top: 22vh;
+  height: 100vh;
+
+  .crew__subheading {
+    grid-area: 1 / 2 / span 1 / span 5;
+    margin-bottom: 13%;
+  }
+
+  .crew__role {
+    grid-area: 2 / 2 / span 1 / span 5;
+    align-self: flex-end;
+    padding-bottom: 3%;
+  }
+
+  .crew__heading {
+    grid-area: 3 / 2 / span 1 / span 6;
+  }
+
+  .crew__paragraph {
+    grid-area: 4 / 2 / span 1 / span 4;
+  }
+
+  .crew__buttons {
+    grid-area: 5 / 2 / span 1 / span 2;
+    display: flex;
+    margin-top: 10%;
+
+    .crew__button {
+      margin-right: 8%;
+      height: 18px;
+      width: 18px;
+    }
+
+    .crew__button_active {
+      margin-right: 8%;
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  .crew__image {
+    grid-area: 1 / 8 / span 5 / span 4;
+    width: 29%;
+    position: fixed;
+    right: 10%;
+    bottom: 0;
+  }
+}
+
+//technology
+.technology {
+  padding-top: 22vh;
+  height: 100vh;
+
+  .technology__subheading {
+    grid-area: 1 / 2 / span 1 / span 4;
+  }
+
+  .technology__buttons {
+    grid-area: 2 / 2 / span 3 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .technology__button {
+      margin-bottom: 40%;
+      width: 75px;
+      height: 75px;
+    }
+
+    .technology__button_active {
+      margin-bottom: 40%;
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  .technology__label {
+    grid-area: 2 / 3 / span 1 / span 5;
+    align-self: flex-end;
+    margin: 8% 0 2%;
+  }
+
+  .technology__heading {
+    grid-area: 3 / 3 / span 1 / span 5;
+    margin-bottom: -10%;
+  }
+
+  .technology__paragraph {
+    grid-area: 4 / 3 / span 1 / span 4;
+    margin-bottom: 20%;
+  }
+
+  .technology__image {
+    grid-area: 2 / 9 / span 3 / span 4;
+    width: 100%;
+  }
+}
+
+//media queries
+//for medium width devices
+@media screen and (max-width: 991px) {
+  //header
+  .header {
+    margin: 0;
+
+    .header__logo {
+      width: 7%;
+      margin-left: 5%;
+    }
+
+    .header__rule {
+      visibility: hidden;
+    }
+
+    .header__navigation {
+      padding-left: 8%;
+
+      .header__link,
+      .header__link_active {
+        margin-right: 10%;
+        .header__link-number {
+          display: none;
+        }
+        .header__link-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  //home page
+  .home {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    padding: 15% 20% 5%;
+    justify-items: center;
+    .home__subheading {
+      grid-area: 1 / 1 / span 1 / span 12;
+      font-size: 22px;
+    }
+
+    .home__heading {
+      grid-area: 2 / 1 / span 1 / span 12;
+      font-size: 140px;
+    }
+
+    .home__paragraph {
+      grid-area: 3 / 1 / span 1 / span 12;
+    }
+
+    .home__button {
+      grid-area: 4 / 1 / span 1 / span 12;
+      height: 250px;
+      width: 250px;
+      font-size: 32px;
+      padding-top: 109px;
+    }
+  }
+  //destination page
+  .destination {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+    padding-top: 18%;
+    justify-items: center;
+
+    .destination__subheading {
+      grid-area: 1 / 1 / span 1 / span 12;
+      width: 100%;
+      justify-self: flex-start;
+      margin-bottom: 2%;
+    }
+
+    .destination__image {
+      grid-area: 2 / 1 / span 1 / span 12;
+      width: 37%;
+      padding-top: 2%;
+      justify-self: center;
+    }
+
+    .destination__buttons {
+      grid-area: 3 / 1 / span 1 / span 12;
+      margin: 4% 0;
+      width: 40%;
+      justify-content: space-around;
+
+      .destination__button,
+      .destination__button_active {
+        margin: 0;
+      }
+    }
+
+    .destination__heading {
+      grid-area: 4 / 1 / span 1 / span 12;
+      font-size: 80px;
+      margin-top: 2%;
+    }
+
+    .destination__paragraph {
+      grid-area: 5 / 1 / span 1 / span 12;
+      width: 80%;
+      margin: 0;
+    }
+
+    .destination__rule {
+      grid-area: 6 / 1 / span 1 / span 12;
+      width: 80%;
+    }
+
+    .destination__distance-label {
+      grid-area: 7 / 4 / span 1 / span 3;
+    }
+
+    .destination__distance-value {
+      grid-area: 8 / 4 / span 1 / span 3;
+    }
+
+    .destination__time-label {
+      grid-area: 7 / 7 / span 1 / span 3;
+    }
+
+    .destination__time-value {
+      grid-area: 8 / 7 / span 1 / span 3;
+    }
+  }
+  //crew page
+  .crew {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+    grid-template-rows: 10% 5% 10% 15% 5% 55%;
+    padding-top: 18%;
+    justify-items: center;
+
+    .crew__subheading {
+      grid-area: 1 / 1 / span 1 / span 12;
+      width: 100%;
+      justify-self: flex-start;
+      margin-bottom: 4%;
+    }
+
+    .crew__role {
+      grid-area: 2 / 1 / span 1 / span 12;
+      font-size: 24px;
+    }
+
+    .crew__heading {
+      grid-area: 3 / 1 / span 1 / span 12;
+      font-size: 42px;
+    }
+
+    .crew__paragraph {
+      grid-area: 4 / 1 / span 1 / span 12;
+      width: 75%;
+    }
+
+    .crew__buttons {
+      grid-area: 5 / 1 / span 1 / span 12;
+      width: 16%;
+      justify-content: space-around;
+      margin: 0;
+
+      .crew__button {
+        height: 10px;
+        width: 10px;
+      }
+
+      .crew__button_active {
+        height: 10px;
+        width: 10px;
+      }
+    }
+
+    .crew__image {
+      grid-area: 6 / 1 / span 1 / span 12;
+      height: 100%;
+      width: auto;
+      position: static;
+    }
+  }
+  //technology page
+  .technology {
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+    grid-template-rows: 10% 30% 20% 5% 10% 25%;
+    padding-top: 18%;
+    justify-items: center;
+
+    .technology__subheading {
+      grid-area: 1 / 1 / span 1 / span 12;
+      width: 100%;
+      justify-self: flex-start;
+    }
+
+    .technology__buttons {
+      grid-area: 3 / 1 / span 1 / span 12;
+      align-self: center;
+      width: 35%;
+      height: 50%;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .technology__button {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+      }
+
+      .technology__button_active {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+      }
+    }
+
+    .technology__label {
+      grid-area: 4 / 1 / span 1 / span 12;
+      align-self: center;
+      margin: 0 0 2%;
+      font-size: 18px;
+    }
+
+    .technology__heading {
+      grid-area: 5 / 1 / span 1 / span 12;
+      font-size: 48px;
+    }
+
+    .technology__paragraph {
+      grid-area: 6 / 1 / span 1 / span 12;
+      width: 70%;
+    }
+
+    .technology__image {
+      grid-area: 2 / 1 / span 1 / span 12;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//for small width devices
+//for medium width devices
+@media screen and (max-width: 575px) {
+  //header
+  .header {
+    .header__logo {
+      width: 10%;
+      margin: 2% 0 0 5%;
+    }
+
+    .header__navigation_mobile {
+      width: 48%;
+      display: flex;
+      justify-content: flex-end;
+
+      .header__menu-open_mobile {
+        background-color: rgba(0, 0, 0, 0);
+        margin-top: 2%;
+      }
+
+      .header__menu_mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 75%;
+        height: 100vh;
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(165, 165, 165, 0.05);
+        backdrop-filter: blur(30px);
+
+        .header__menu-close_mobile {
+          width: 20%;
+          align-self: flex-end;
+          margin-bottom: 20%;
+          background-color: rgba(0, 0, 0, 0);
+        }
+
+        .header__link_mobile {
+          text-decoration: none;
+          padding: 8%;
+
+          .header__link-number {
+            font-family: base.$font-secondary;
+            font-size: 18px;
+            font-weight: 700;
+            color: base.$color-warm;
+            margin-right: 6%;
+          }
+    
+          .header__link-text {
+            font-family: base.$font-secondary;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.14rem;
+            color: base.$color-warm;
+          }
+    
+        }
+      }
+    }
+  }
+  //home page
+  .home {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    padding: 20% 8% 10%;
+    .home__subheading {
+      font-size: 16px;
+      margin-bottom: 7%;
+    }
+
+    .home__heading {
+      font-size: 80px;
+      margin-bottom: 6%;
+    }
+
+    .home__button {
+      height: 150px;
+      width: 150px;
+      font-size: 22px;
+      padding-top: 63px;
+    }
+  }
+  //destination page
+  .destination {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-size: 100% 100%;
+    grid-template-rows: 10% 30% 17% 10% 28% 6% 5% 10% 5% 10%;
+    padding: 20% 8% 0;
+
+    .destination__subheading {
+      text-align: center;
+    }
+
+    .destination__image {
+      width: 50%;
+    }
+
+    .destination__buttons {
+      width: 100%;
+      justify-content: space-evenly;
+
+      .destination__button,
+      .destination__button_active {
+        font-size: 16px;
+      }
+    }
+
+    .destination__heading {
+      font-size: 48px;
+    }
+
+    .destination__paragraph {
+      width: 100%;
+      align-self: center;
+    }
+
+    .destination__rule {
+      width: 100%;
+    }
+
+    .destination__distance-label {
+      grid-area: 7 / 1 / span 1 / span 12;
+    }
+
+    .destination__distance-value {
+      grid-area: 8 / 1 / span 1 / span 12;
+    }
+
+    .destination__time-label {
+      grid-area: 9 / 1 / span 1 / span 12;
+    }
+
+    .destination__time-value {
+      grid-area: 10 / 1 / span 1 / span 12;
+    }
+  }
+  //crew page
+  .crew {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    grid-template-rows: 10% 35% 10% 5% 10% 25%;
+    align-items: center;
+    padding: 20% 8% 0;
+
+    .crew__subheading {
+      text-align: center;
+      align-self: flex-start;
+    }
+
+    .crew__role {
+      grid-area: 4 / 1 / span 1 / span 12;
+      font-size: 18px;
+      align-self: flex-start;
+    }
+
+    .crew__heading {
+      grid-area: 5 / 1 / span 1 / span 12;
+      font-size: 26px;
+      align-self: flex-start;
+    }
+
+    .crew__paragraph {
+      grid-area: 6 / 1 / span 1 / span 12;
+      width: 100%;
+      align-self: flex-start;
+    }
+
+    .crew__buttons {
+      grid-area: 3 / 1 / span 1 / span 12;
+      width: 35%;
+      .crew__button {
+        height: 10px;
+        width: 10px;
+      }
+
+      .crew__button_active {
+        height: 10px;
+        width: 10px;
+      }
+    }
+
+    .crew__image {
+      grid-area: 2 / 1 / span 1 / span 12;
+      height: 100%;
+    }
+  }
+  //technology page
+  .technology {
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    grid-template-rows: 10% 25% 15% 5% 5% 30%;
+    align-items: center;
+    padding: 20% 0 0;
+
+    .technology__subheading {
+      text-align: center;
+      align-self: flex-start;
+    }
+
+    .technology__buttons {
+      width: 60%;
+
+      .technology__button {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+      }
+
+      .technology__button_active {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+      }
+    }
+
+    .technology__label {
+        font-size: 16px;
+    }
+
+    .technology__heading {
+      font-size: 26px;
+      margin: 0;
+    }
+
+    .technology__paragraph {
+      width: 85%;
+      margin: 5% 0 0;
+      align-self: flex-start;
+    }
+  }
+}
