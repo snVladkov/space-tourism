@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site](https://optimistic-mestorf-ace26b.netlify.app/)
 
 ## My process
 
@@ -37,7 +37,11 @@ Users should be able to:
 
 ### Notes
 
-For switching between pages I implemented `react-router` which uses the `<Route/>` and `<NavLink/>` components for navigating between pages. Every page is a single functional component since they're all fairly simple in their structure. For the internal data changes of each page I used the `useState` hook to manage the state and a data.json file which simulates a response from an API call. Thanks to `framer-motion` I was able to add some nice animations for the page load and the mobile menu toggle.
+- I used `create-react-app` to create the boilerplate code
+- For switching between pages I implemented `react-router` which uses the `<Route/>` and `<NavLink/>` components for navigating between pages. Every page is a single functional component since they're all fairly simple in their structure. 
+- For the internal data changes of each page I used the `useState` hook to manage the state and a data.json file which simulates a response from an API call. 
+- Thanks to `framer-motion` I was able to add some nice animations for the page load and the mobile menu toggle.
+- For deployment I used [Netlify](https://www.netlify.com/)
 
 ## Author
 
