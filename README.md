@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Chalange Solution](https://www.frontendmentor.io/solutions/space-tourism-website-with-react-and-sass-H1cYGtzpd)
 - [Live Site](https://optimistic-mestorf-ace26b.netlify.app/)
 
 ## My process
