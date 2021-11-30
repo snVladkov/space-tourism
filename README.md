@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- [Chalange Solution](https://www.frontendmentor.io/solutions/space-tourism-website-with-react-and-sass-H1cYGtzpd)
+- [Challenge Solution](https://www.frontendmentor.io/solutions/space-tourism-website-with-react-and-sass-H1cYGtzpd)
 - [Live Site](https://optimistic-mestorf-ace26b.netlify.app/)
 
 ## My process
